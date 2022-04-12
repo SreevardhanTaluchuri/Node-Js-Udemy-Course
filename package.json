@@ -1,0 +1,20 @@
+{
+  "name": "node-js-udemy-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course.git"
+  },
+  "author": "Sreevardhan Taluchuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course/issues"
+  },
+  "homepage": "https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course#readme"
+}
