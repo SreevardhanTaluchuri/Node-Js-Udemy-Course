@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course/issues"
   },
-  "homepage": "https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course#readme"
+  "homepage": "https://github.com/SreevardhanTaluchuri/Node-Js-Udemy-Course#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
