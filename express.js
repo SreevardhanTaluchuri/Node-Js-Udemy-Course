@@ -1,26 +1,18 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const adminRouter = require("./routes/admin");
+const shopRouter = require("./routes/shop");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/", (req, res, next) => {
-  console.log("In first middleware");
-  next();
-});
+app.use(adminRouter);
+app.use(shopRouter);
 
-app.use("/add-product", (req, res, next) => {
-  console.log("Inside Add Product route");
-  res.send(`
-  <form action="/product" method="POST">
-    <input type="text" name="Product">
-    <button type="submit">Submit</button>
-  </form>`);
-});
-
-app.use("/product", (req, res, next) => {
-  console.log(req.body);
-  res.redirect("/");
+app.use((req, res, next) => {
+  res.status(404).send(`
+  <h1>Error 404: Page Not Found</h1>
+  `);
 });
 
 app.listen(3000, () => {
